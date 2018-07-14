@@ -19,14 +19,6 @@ rutas.ModificarEstadoPedido = "/Admin/ModificarEstadoPedido";
 
 
 
-function DisposeEvent(objeto) {
-    $(objeto).off();
-}
-
-function DisposeEvent(objeto, evento) {
-    $(document).off(evento, objeto);
-}
-
 function PopInformativo(texto) {
     $("#IdMensaje").find("p").empty();
     $("#IdMensaje").find("p").append(texto);
