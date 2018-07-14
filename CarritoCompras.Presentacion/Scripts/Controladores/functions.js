@@ -27,19 +27,6 @@ function DisposeEvent(objeto, evento) {
     $(document).off(evento, objeto);
 }
 
-function MostrarMensajeError(mensaje) {
-    $("#Message-Error strong").empty();
-    $("#Message-Error strong").append(mensaje);
-    $("#Message-Error").show();
-
-}
-function MostrarMensajeOK(mensaje) {
-    Hidden("#Message-Error");
-    $("#Message-OK").empty();
-    $("#Message-OK").append(mensaje);
-    $("#Message-OK").show();
-}
-
 function PopInformativo(texto) {
     $("#IdMensaje").find("p").empty();
     $("#IdMensaje").find("p").append(texto);
