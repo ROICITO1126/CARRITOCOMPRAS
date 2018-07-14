@@ -27,14 +27,6 @@ function DisposeEvent(objeto, evento) {
     $(document).off(evento, objeto);
 }
 
-function Visible(objeto) {
-    $(objeto).show();
-}
-
-function Hidden(objeto) {
-    $(objeto).hide();
-}
-
 function MostrarMensajeError(mensaje) {
     $("#Message-Error strong").empty();
     $("#Message-Error strong").append(mensaje);
